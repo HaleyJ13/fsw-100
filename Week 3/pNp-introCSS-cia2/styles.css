@@ -1,0 +1,28 @@
+.class {
+    color: darkgreen;
+    font-family: Georgia;
+    text-align: center;
+}
+
+h2 {
+    font-family: georgia;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    float: left;
+    padding-right: 30px;
+}
+
+#id {
+    text-transform: uppercase;
+   color: green;
+}
+
+ul > li {
+    color: rgb(209, 65, 209);
+}
