@@ -1,0 +1,18 @@
+h1 {
+    color: blue;
+}
+
+table, th, td, tr {
+    border: 2px solid black;
+}
+
+.navbar {
+    padding: 5px 30px 35px 30px;
+  }
+
+  h2, h4, main {
+      color: purple;
+  }
+  p {
+      color: blue;
+  }
