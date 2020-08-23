@@ -1,0 +1,40 @@
+body, html {
+    background: url("https://images.unsplash.com/photo-1492892132812-a00a8b245c45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    margin: 10px;
+    background-color: rgba(82, 3, 3, 0.5);
+    color: white;
+    padding: 14px 16px;
+}
+.about {
+    position: relative;
+    left:420px;
+}
+
+.contact {
+    position: relative;
+    left: 850px;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  nav a:hover {
+    background-color: rgb(68, 60, 180);
+  }
+
+  
+  h1 {
+    padding: 10px;
+    text-align: center;
+    background: rgb(100, 4, 4);
+    font-size: 50px;
+    color: white;
+}
+  main {
+    font-family: 'Dancing Script', cursive;
+  }
