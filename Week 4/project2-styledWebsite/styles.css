@@ -2,39 +2,88 @@ body, html {
     background: url("https://images.unsplash.com/photo-1492892132812-a00a8b245c45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .nav {
     position: fixed;
     width: 100%;
     margin: 10px;
-    background-color: rgba(82, 3, 3, 0.5);
+    background:
     color: white;
     padding: 14px 16px;
 }
+.home {
+  position: relative;
+  right: 120px;
+}
 .about {
     position: relative;
-    left:420px;
+    left:50px;
 }
 
 .contact {
     position: relative;
-    left: 850px;
+    left: 200px;
   }
   
-  /* Change the link color to #111 (black) on hover */
-  nav a:hover {
-    background-color: rgb(68, 60, 180);
-  }
-
   
   h1 {
     padding: 10px;
     text-align: center;
-    background: rgb(100, 4, 4);
     font-size: 50px;
+    background-color: black;
     color: white;
+}
+h3 {
+  background-color: black;
 }
   main {
     font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 30px;
+    text-align: center;
   }
+  p {
+    border-style: dotted;
+    border-color: white;
+    background: black;
+    text-align: center;
+  }
+  
+  
+  table, th, td {
+    font-family: Helvetica;
+  border: 2px solid white;
+  text-align: center;
+  }
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  ul > li {
+    border: 2px dotted white;
+    text-align: center;
+    list-style-position: inside;
+  }
+  figure > img{
+    width: 350px;
+    height: auto;
+  }
+  
+.column {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+  footer {
+        color: white;
+  }
+  
