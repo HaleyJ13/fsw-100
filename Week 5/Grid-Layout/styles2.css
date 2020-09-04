@@ -16,23 +16,23 @@
         
     
     #item-1 {
-        background-color: #F5C6D6;
+        background-color: blue;
         grid-column: 1/5;
     }
     #item-2 {
-        background-color: #EE2E84;
+        background-color: rgb(46, 150, 98);
         grid-column: 1/5;
     }
     #item-3 {
-        background-color: #EE2E84;
+        background-color: #39a2b4;
         grid-column: 1/5;
     }
     #item-4 {
-        background-color: #EE2E84;        
+        background-color: #360880;        
         grid-column: 1/5;        
     }
     #item-5 {
-        background-color: #EE2E84;        
+        background-color: #7669b1;        
         grid-column: 1/5;  
     }
     }
@@ -43,42 +43,41 @@
         grid-column: 1/5;
     }
     #item-2 {
-        background-color: #EE2E84;
+        background-color: rgb(46, 150, 98);
         grid-column: 1/2;
     }
     #item-3 {
-        background-color: #EE2E84;
+        background-color: #39a2b4;
         grid-column: 2 / 4;
     }
     #item-4 {
-        background-color: #EE2E84;        
-        grid-column: 4/5;        
+        background-color: #360880;        
+        grid-column: 4/6;        
     }
     #item-5 {
-        background-color: #EE2E84;        
+        background-color: #7669b1;        
         grid-column: 1/5;  
     }
 }
- @media only screen and (min-width:640px and max-width: 766px)
-{
+ @media only screen and (max-width: 1280px min-width: 768px) {
     #item-1 {
-        background-color: #F5C6D6;
+        background-color: blue;
         grid-column: 1/5;
     }
     #item-2 {
-        background-color: #EE2E84;
+        background-color: rgb(46, 150, 98);
         grid-column: 1/2;
     }
     #item-3 {
-        background-color: #EE2E84;
+        background-color: #39a2b4;
         grid-column: 2/5;
     }
     #item-4 {
-        background-color: #EE2E84;        
-        grid-column: 1/5;        
+        background-color: #360880;        
+        grid-column: 4/6;        
     }
     #item-5 {
-        background-color: #EE2E84;        
-        grid-column: 1/5;  
+        background-color: #7669b1;        
+        grid-column: 1/6;  
     }
 }
