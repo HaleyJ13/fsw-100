@@ -1,0 +1,87 @@
+#flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.box1 {
+    width: 600px;
+    height: 300px;
+    background-color: purple;
+    border: 3px dotted black;
+    margin: 10px;
+}
+
+.box2 {
+    width: 600px;
+    height: 300px;
+    background-color: #E0BBE4;
+    border: 3px solid black;
+    margin: 10px;
+}
+
+.box3 {
+    width: 600px;
+    height: 300px;
+    background-color: #E0BBE4;
+    border: 3px dotted black;
+    margin: 10px;
+}
+
+.box4 {
+    width: 600px;
+    height: 300px;
+    background-color: purple;
+    border: 3px solid black;
+    margin: 10px;
+}
+
+.box5 {
+    width: 600px;
+    height: 300px;
+    background-color: purple;
+    border: 3px dotted black;
+    margin: 10px;
+}
+
+.box6 {
+    width: 600px;
+    height: 300px;
+    background-color: #E0BBE4;
+    border: 3px solid black;
+    margin: 10px;
+}
+
+.box1:hover {
+    background-image: url(https://lh3.googleusercontent.com/proxy/_pX4zlD_cRNHLKNTjIJL6QTtHymTWXKFGagHe1cES0bLdae-yGTGCybUldQjxkg5Lc6s4pWyQApqj4osj1v_x_yVRFYSUOvRaCuEAMXUkAhVE_6QDzF-YTTrvC-dsI-sSJIZTSEg0Ck);
+    box-shadow: 10px 10px 5px fuchsia;
+}
+
+.box2:hover {
+    background-image: url(https://img1.wsimg.com/isteam/ip/07bc40a9-2dd3-4c87-9875-7a6974bdc401/sunflower-red-yellow-nature-colorful-bunch.jpg/:/rs=w:600,h:300,cg:true,m/cr=w:600,h:300);
+    position: static;
+    height:400px;
+    width: 50%;
+}
+
+.box3:hover {
+    background-image: url(https://www.williamsflowers.com/assets/inc/timthumb.php?src=https://f7e8d318f31623d72821-e86e8b8e4ccf82238b56398cba8fe354.ssl.cf2.rackcdn.com/Depositphotos44537085s-2-1.jpg&w=600&h=300&zc=1);
+    border: 2px dashed fuchsia;
+}
+
+.box4:hover {
+    background-image: url(https://img-s3.onedio.com/id-57ec6f5747420dd32bcf66fa/rev-0/w-600/h-300/s-77d92f59c81ff717066a1133e29d861ec6220819.jpg);
+    Opacity: 0.5;
+}
+
+.box5:hover {
+    background-image: url(https://www.merlijn.nu/img_thumb.php?plaatje=resources/phpimg/blok/homepage_blokken_3_6a_Website.jpg&breedte=600&hoogte=300&schalen=n);
+    margin: 10px;
+    padding: 15px;
+}
+
+.box6:hover {
+    background-image: url(https://i.pinimg.com/originals/72/4c/60/724c600c553fd5bf8a222b9748b861ab.jpg);
+    border-radius: 15px 40px;
+}
