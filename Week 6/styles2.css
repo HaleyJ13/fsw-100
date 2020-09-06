@@ -1,0 +1,146 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+  
+  body, html {
+    background: url("https://i.pinimg.com/originals/a3/87/68/a387686fd2f2b6e7e1ef6e1a2c83f1e9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+  
+  .container { 
+    display: grid;
+    grid-template-areas: 
+      "header header header"
+      "nav main aside"
+      "footer footer footer";
+    grid-template-rows: 80px 1fr 50px;
+    grid-template-columns: 15% 1fr 18%;
+    grid-gap: 5px;
+    height: 100vh;
+    margin: auto;
+    max-width: 800px;
+    font-family: 'Capriola';
+   
+  }
+  
+  .header {
+    grid-area: header;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+  }
+  h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    margin-top: 5px;
+  }
+  
+   #nav {
+    grid-area: nav; 
+    color: white;
+    float: left;
+    border: 1px dotted rgb(160, 137, 9);
+  }*/
+  #nav a{
+    color: rgb(160, 137, 9);
+    text-decoration:none;
+}
+
+#nav a:hover {
+   color:pink;
+   text-decoration: underline;
+}
+
+  .main {
+    grid-area: main; 
+    color: white; 
+    justify-items: center;
+    text-align: center;
+    border: 1px dotted rgb(160, 137, 9);
+  }
+  h2 {
+    text-shadow: 2px 2px 4px #000000;
+  }
+  h3 {
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 30px;
+  }
+.wrapper {
+  text-align: center;
+}
+  
+  .wrapper ul {
+      justify-content: center;
+      display: grid;
+}
+.wrapper li {
+    justify-content: center;
+  }
+  tbody, tr, td {
+    border: 2px solid ;
+    text-align: center;
+   
+  }
+  th {
+    color: rgb(160, 137, 9);
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 30px;
+  }
+  .center {
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .aside {
+    grid-area: aside; 
+    border: 1px dotted gold;
+  }
+  
+  #footer {
+      margin-top: 790px;
+      position: relative;
+      /* negative value of footer height */
+      height: 100px;
+      clear: both;
+      grid-gap: 5px;
+      color: white;
+      font-size: 20px;
+      background-color: lightpink;
+      border: 1px dotted rgb(160, 137, 9);
+      text-align: center;
+  }
+    
+
+  
+  header, nav, main, aside, footer {
+    padding: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "footer";
+  
+      grid-template-columns: 1fr;
+      grid-template-rows:
+        auto /* Header */
+        minmax(75px, auto) /* Nav */
+        1fr /* Content */
+        minmax(75px, auto) /* Sidebar */
+        auto; /* Footer */
+    }
+  
+    nav, aside {
+      margin: 0;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    table thead {
+      display: none;
+    }
+  }
+  
