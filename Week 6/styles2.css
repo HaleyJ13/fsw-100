@@ -2,6 +2,8 @@
   @import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
   
   body, html {
+  /* overflow-x: hidden; */
+    padding-right: 5px;
     background: url("https://i.pinimg.com/originals/a3/87/68/a387686fd2f2b6e7e1ef6e1a2c83f1e9.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,17 +11,17 @@
 }
   
   .container { 
+    width: 95%;
     display: grid;
     grid-template-areas: 
       "header header header"
       "nav main aside"
       "footer footer footer";
     grid-template-rows: 80px 1fr 50px;
-    grid-template-columns: 15% 1fr 18%;
+    grid-template-columns: 18% auto 30%;
     grid-gap: 5px;
     height: 100vh;
     margin: auto;
-    max-width: 800px;
     font-family: 'Capriola';
    
   }
@@ -41,7 +43,7 @@
     color: white;
     float: left;
     border: 1px dotted rgb(160, 137, 9);
-  }*/
+  }
   #nav a{
     color: rgb(160, 137, 9);
     text-decoration:none;
@@ -93,15 +95,19 @@
   }
   .aside {
     grid-area: aside; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 1px dotted gold;
   }
   
   #footer {
-      margin-top: 790px;
+      margin-bottom: 0px;
       position: relative;
+      bottom: 0;
+      grid-area: footer;
       /* negative value of footer height */
       height: 100px;
-      clear: both;
       grid-gap: 5px;
       color: white;
       font-size: 20px;
@@ -116,8 +122,32 @@
     padding: 10px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 768px) { 
     .container {
+      /* display: flex; flex-direction: column ; */
+      grid-template-columns: 100%;
+      grid-template-areas:
+        "header"
+        "header"
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "footer";
+    }}
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) { 
+      .container {
+        /* display: flex; flex-direction: column ; */
+        grid-template-columns: 25% auto;
+        grid-template-areas:
+          "header header"
+          "nav main"
+          "aside aside"
+          "aside aside"
+          "footer footer";
+      }}
+    /* .container {
       grid-template-areas:
         "header"
         "nav"
@@ -126,16 +156,15 @@
         "footer";
   
       grid-template-columns: 1fr;
-      grid-template-rows:
-        auto /* Header */
-        minmax(75px, auto) /* Nav */
-        1fr /* Content */
-        minmax(75px, auto) /* Sidebar */
-        auto; /* Footer */
-    }
+      grid-template-rows: auto;
+        minmax(75px, auto) 
+        1fr 
+        minmax(75px, auto) 
+        auto; 
+    } */
   
-    nav, aside {
+    /* nav, aside {
       margin: 0;
     }
-  }
+  */ 
  
