@@ -33,12 +33,19 @@ img {
     display: grid;
     grid-gap: 20px;
 }
+header {
+    text-align: center;
+    color: white;
+    font-family: 'Rochester', cursive;
+    font-size: 50px;
+}
 
 .main-nav ul {
     display: grid;
     grid-gap: 20px;
     padding: 0;
     list-style: none;
+    text-align: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
@@ -69,9 +76,11 @@ img {
         'showcase showcase top-box-b';
 }
 
-table, th, td {
-    border: 1px solid white;
-    border-collapse: collapse;
+table, th, td{
+    border: white;
+    border-style: double;
+    padding: 10px;
+
   }
 
 .showcase {
@@ -92,12 +101,14 @@ table, th, td {
     font-size: 4rem;
     margin-bottom: 0;
     color: var(--light);
+    text-align: center;
 }
 
 .showcase p {
     font-size: 1.3rem;
     margin-top: 0;
     color: var(--light);
+    text-align: center;
 }
 
 /*top box*/
@@ -155,6 +166,10 @@ table, th, td {
     box-shadow: var(--shadow);
 }
 
+ h1 {
+    text-align: center;
+    color: white;
+}
 
 footer {
     margin-top: 2rem;
@@ -163,6 +178,44 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+ h2 {
+    color: white;
+    text-align: center;
+
+}
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  /* submit color */
+  input[type=submit] {
+    background-color: rgb(112, 4, 112);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* hover */
+  input[type=submit]:hover {
+    background-color: rgb(194, 28, 194);
+  }
+  
+  /*background color for form */
+  .container {
+    border-radius: 5px;
+    background-color: black;
+    padding: 20px;
+  }
 
 @media(max-width: 700px) {
     .top-container {
